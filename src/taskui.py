@@ -28,14 +28,28 @@ class UITask:
         self.showDataList(tmp)
 
     def show(self):
-        print("This is show task")
-        pass
+        
+        dbPath = self.db.pathTo(destination="../db", origin=__file__)
+        
+        tmp = self.db.readFile(fileName=dbPath + "/tasks-list",
+                               format="json",
+                               columns=["name", "time"])
+        
+        self.showDataList(tmp)
+        
 
     def dell(self):
-        pass
-
+        dbPath = self.db.pathTo(destination="../db", origin=__file__)
+        
+        df = self.db.readFile(fileName=dbPath + "/tasks-list",
+                               format="json",
+                               columns=["name", "time"])
+        self.show()
+        row_to_eliminate = int(input("Introduce the index of the row to eliminate: "))
+        
+        new_df= df.drop([row_to_eliminate])
+        self.db.writeFile(new_df, fileName=dbPath + "/tasks-list", format="json")
+            
     def dellAll(self):
-        pass
-
-    def extra(self):
-        print("this is an extra option \n")
+        dbPath = self.db.pathTo(destination="../db", origin=__file__)
+        self.db.writeFile(None, fileName=dbPath + "/tasks-list", format="json")
