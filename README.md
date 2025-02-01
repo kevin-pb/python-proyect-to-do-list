@@ -2,7 +2,10 @@
 
 This project is an application that allows you to manage a task list using pandas DataFrames
 
+# Architecture
 
+En la carpeta src se encuentra el archivo "[main](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/main.py)", el "taskui" y el "file.demo". El archivo "taskui" 
+[main](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/main.py)
 
 ## References 
 - [Path Lib Docs](https://docs.python.org/3/library/pathlib.html)
