@@ -1,50 +1,53 @@
+from lib.file import *
 
-"""try:
+
+
+"""try:"""
 
 while True is True:
         
-    print("\n Selcet an option: \n")
+        print("\n Selcet an option: \n")
     
-    print("1-Add task \n")
+        print("1-Add task \n")
         
-    print("2-See tasks \n")
+        print("2-See tasks \n")
     
-    print("3-Delete 1 task \n")
+        print("3-Delete 1 task \n")
         
-    print("4-Delete all tasks \n")
+        print("4-Delete all tasks \n")
         
-    print("5-Finish program \n")
+        print("5-Finish program \n")
 
-    option = int(input("- "))
+        option = int(input("- "))
         
-    if option == 5:
+        if option == 5:
             
-        break
+            break
         
-    elif option == 1:
+        elif option == 1:
             
-        with open("tasks-list.json", "a", encoding= "UTF-8") as tasks_list:
+            with open("tasks-list.json", "a", encoding= "UTF-8") as tasks_list:
                 
-            tasks_list.write(input("Introduce a task: "))
+                tasks_list.write(input("Introduce a task: "))
                 
-            tasks_list.write("\n")
+                tasks_list.write("\n")
         
-    elif option == 2:
+        elif option == 2:
             
-        tasks_list = pd.read_json("tasks-list.json")
+            file_read = readFile()
+
+            print(file_read)
             
-        print(tasks_list.to_string())
-        
-    elif option == 3:
+        elif option == 3:
             
-        with open("tasks-list.json", encoding= "UTF-8") as tasks_list:
+            with open("tasks-list.json", encoding= "UTF-8") as tasks_list:
                 
-            tasks_list.readline()
+                tasks_list.readline()
             
             
-    elif option == 4:
-            
-        pass
+        elif option == 4:
+
+            pass
         
-except:
+"""except:
     pass"""
