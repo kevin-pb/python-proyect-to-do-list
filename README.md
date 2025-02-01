@@ -2,12 +2,13 @@
 
 This project is an application that allows you to manage a task list using pandas DataFrames
 
-# Architecture
+- ## Architecture
 
-En la carpeta src se encuentra el archivo "[main](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/main.py)", el "taskui" y el "file.demo". El archivo "taskui" 
-[main](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/main.py)
+In the src folder you will find the "[main](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/main.py)"file, the "[taskui](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/taskui.py)" file and the "file.demo" file. The "[taskui](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/taskui.py)" file contains a class that contains a series of methods that allow you to perform operations on a pandas DataFrame; the operations that it allows you to perform are: add a task, show all tasks, delete a task and delete all tasks. The "[main](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/main.py)" file is the file that will be executed in the application; it contains the union of all the files with which the application can be executed.
 
-## References 
+[taskui](https://github.com/kevin-pb/python-proyect-to-do-list/blob/main/src/taskui.py)
+
+# References 
 - [Path Lib Docs](https://docs.python.org/3/library/pathlib.html)
 - [File & Path Demo](./src/file.demo.py)
 - [Panda Demo Lib](./src/lib/file.py)
