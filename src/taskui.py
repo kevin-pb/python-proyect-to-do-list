@@ -28,6 +28,7 @@ class UITask:
         self.showDataList(tmp)
 
     def show(self):
+        print("This is show task")
         pass
 
     def dell(self):
@@ -35,3 +36,6 @@ class UITask:
 
     def dellAll(self):
         pass
+
+    def extra(self):
+        print("this is an extra option \n")

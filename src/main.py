@@ -5,10 +5,12 @@ from taskui import UITask
 taskUi = UITask(db=FileDB())
 
 options = [
-    {"title": "Add task", "handler": taskUi.add},
+    {"title": "Add task", "handler": lambda: taskUi.add()},
     {"title": "Show task", "handler": taskUi.show},
-    {"title": "Delete task", "handler": taskUi.dell},
+    {"title": "Delete task", "handler": lambda: taskUi.dell()},
     {"title": "Delete all", "handler": taskUi.dellAll},
 ]
 menu = MenuUI(options)
-menu.render()
+
+if __name__ == "__main__":
+    menu.render()
