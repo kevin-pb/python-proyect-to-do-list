@@ -8,7 +8,22 @@ In the src folder you will find the "[main](https://github.com/kevin-pb/python-p
 
 # Run & Configure
 
-python main.py
+### Requirements
+- Python 3.x
+- pandas library
+
+### Installation
+1. Clone the repository:
+   
+   git clone https://github.com/kevin-pb/python-proyect-to-do-list.git
+   
+2. Install dependencies:
+   
+   pip install pandas
+
+### Run
+
+- python main.py
 
 # References 
 
