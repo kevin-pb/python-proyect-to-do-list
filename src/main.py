@@ -1,7 +1,5 @@
 from lib.file import *
 
-
-
 """try:"""
 
 while True is True:
